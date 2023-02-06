@@ -1,0 +1,37 @@
+#ques{
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+#rating-ques{
+    display: flex;
+    margin: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#selection-ques{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#comment-ques{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#rating{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+

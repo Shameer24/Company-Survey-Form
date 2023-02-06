@@ -1,0 +1,19 @@
+.whole_content{
+    justify-content: center;
+}
+
+.header_content{
+    display: flex;
+    font-size: 35px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+}
