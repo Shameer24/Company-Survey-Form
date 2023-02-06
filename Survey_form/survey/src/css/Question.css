@@ -14,12 +14,14 @@
     align-items: center;
 }
 
-#selection-ques{
+#select-ques{
     display: flex;
-    margin: 50px;
+    margin: 40px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
+
 
 #comment-ques{
     display: flex;
@@ -34,4 +36,10 @@
     text-align: center;
     margin-bottom: 20px;
 }
-
+#select{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 50px;
+}

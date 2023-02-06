@@ -28,7 +28,8 @@ const Question = (param) => {
       return (
         <>
           <div id="select-ques" key={index} > {item.question}</div>
-          <div><Checkques list={item.choices} /></div>
+          <div id= "select"><Checkques value ={index} list={item.choices} /></div>
+          <hr />
         </>
       )
     }
