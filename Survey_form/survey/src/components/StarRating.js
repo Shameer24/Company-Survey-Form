@@ -24,10 +24,13 @@ const StarRating = (param) => {
   const [ans, setAns] = useState(arr);
   const [value, setvalue] = useState(0);
 
-  const handlechange = (value) => {
-    setvalue(value);
+  useEffect(() => {
     ans[param.value] = value;
     setAns(ans)
+  },[value])
+  
+  const handlechange = (value) => {
+    setvalue(value);
   };
 
 
@@ -35,17 +38,18 @@ const StarRating = (param) => {
 
   return (
     <div>
-      <StyledRating value={value}
-        onChange={(e) => {
-          handlechange(e.target.value)
-        }}
+      <StyledRating 
+        value={value}
+        onChange={(e) => {handlechange(e.target.value)}}
         max={10}
         sx={{ fontSize: '3rem' }}
         variant="contained"
         size="large"
         startIcon={<StarSharpIcon />}
         icon={<StarSharpIcon fontSize="inherit" ></StarSharpIcon>}
-        emptyIcon={<StarSharpIcon sx={{ "font": "revert-layer" }} fontSize="inherit"></StarSharpIcon>}>
+        emptyIcon={<StarSharpIcon sx={{ "font": "revert-layer" }} 
+        fontSize="inherit" >
+        </StarSharpIcon>}>
       </StyledRating>
       <div id="num">{values.map((num) => (
         <div id="eachnum" >{num}</div>

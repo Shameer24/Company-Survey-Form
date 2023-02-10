@@ -26,6 +26,7 @@
 #comment-ques{
     display: flex;
     margin: 50px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -38,8 +39,13 @@
 }
 #select{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+#comment{
+    margin: 50px;
+    margin-top: 20px;
+    text-align: left;
 }
